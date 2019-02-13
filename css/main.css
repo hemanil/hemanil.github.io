@@ -56,6 +56,7 @@ body {
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
+    overflow-x: hidden;
 }
 
 ol, ul {
@@ -2155,7 +2156,7 @@ header {
 }
 
 .banner-area {
-  background: url(../img/header-bg.jpg) no-repeat center center/cover;
+  background: url(../img/header-bg1.jpg) no-repeat center center/cover;
 }
 @media screen and (max-width: 750px){
     .banner-area {
@@ -2172,7 +2173,7 @@ header {
 }
 
 .banner-area .overlay-bg {
-  opacity: .1;
+  opacity: .3;
 }
 
 .banner-content {
@@ -2188,9 +2189,34 @@ header {
 @media (max-width: 991px) {
   .banner-content h1 {
     font-size: 36px;
+      margin-bottom: 50px;
   }
 }
+.countdown-area{
+    margin-top: 80px;
+}
+#demo1{
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
 
+@keyframes slidein {
+    from {
+        margin-right: -50%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 10%;
+        width: 100%;
+    }
+}
+.clock_sec
+{
+    margin-top: 70px;
+}
 @media (max-width: 991px) {
   .banner-content h1 br {
     display: none;
@@ -2313,6 +2339,7 @@ header {
 .clockinner {
   text-align: center;
   padding: 30px 0px;
+    margin-top: -50px;
 }
 
 .clockinner span {
@@ -2321,7 +2348,7 @@ header {
 }
 
 .clockinner .smalltext {
-  color: #777;
+  color: #c931ff;
 }
 
 @media (max-width: 768px) {
